@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
   <title>Kevin Kim's Homepage</title>
@@ -8,14 +8,17 @@
       border: 1px solid black;
       border-collapse: collapse;
       text-align: center;
-      width : 100px;
-      height: 40px;
+      width : 75px;
+      height: 30px;
     }
     th, td {
-      padding: 20px;
+      padding: 15px;
     }
     th {
       text-align: center;
+    }
+    .head {
+      background-color:blanchedalmond;
     }
     }
   </style>
@@ -28,13 +31,13 @@
   <table style="width:100%">
    <caption>김기백의 시간표 입니다.</caption>
     <tr>
-      <th> </th>
-      <th>월</th>
-      <th>화</th>
-      <th>수</th>
-      <th>목</th>
-      <th>금</th>
-      <th>토</th>
+      <th class="head"></th>
+      <th class="head">월</th>
+      <th class="head">화</th>
+      <th class="head">수</th>
+      <th class="head">목</th>
+      <th class="head">금</th>
+      <th class="head">토</th>
     </tr>
     <tr>
       <th>07:15 ~ 08:00</th>
@@ -72,18 +75,65 @@
        </tr>
      </table>
 
-     저는 코딩을 배우는 김기백입니다.<br>이 공간을 활용하여 아래와 같은 일들을 효율적 및 효과적으로 해낼 생각입니다.
-     <ol>
-       <li><a href="할일관리.html"title="나는 슈퍼똘똘이">할일관리</a></li>
-       <li><a href="일기.html" title="나는 슈퍼똘똘이">일기</a></li>
-       <li><a href="시간표.html"title="나는 슈퍼똘똘이"> 시간표 </a></li>
-     </ol>
+<h2>할일 목록</h2>
+<form action="/action_page.php" method="get">
+  <input type="checkbox" name="math" value="done1"/>
+  <input type="hidden" name="math_hidden"/>
+  <label for="math"> 수학 문제집 풀기(수학 과외, 엄마 숙제)</label><br>
+  <input type="checkbox" name="clr" value="done2">
+  <label for="reading log"> 리딩로그 쓰기(목)</label><br>
+  <input type="checkbox" name="clr" value="done2">
+  <label for="pack backpack"> 가방챙기기 </label><br>
+  <input type="checkbox" name="clr" value="done2">
+  <label for="study for test"> 시험공부하기</label><br>
+  <input type="checkbox" name="clr" value="done2">
+  <label for="clr"> 한자 6자 (매일)</label><br>
+  <input type="checkbox" name="cll" value="done3">
+  <label for="cll"> 중국어 듣기/연습 (매일)</label><br>
+  <input type="checkbox" name="school" value="done4">
+  <label for="diary"> 중국어 녹음 (금)</label><br>
+  <input type="checkbox" name="diary" value="done6">
+  <label for="diary"> 피아노 연습</label><br>
+  <input type="checkbox" name="diary" value="done6">
+  <label for="school"> 클래스룸, 교재 숙제</label><br>
+  <input type="checkbox" name="poly" value="done5">
+  <label for="school"> 학교 영어 숙제</label><br>
+  <input type="checkbox" name="poly" value="done5">
+  <label for="poly"> Poly 숙제 (화/목)</label><br>
+  <input type="checkbox" name="diary" value="done6">
+  <label for="diary"> 플라톤 읽기 (화/목)</label><br>
+  <input type="checkbox" name="diary" value="done6">
+  <label for="diary"> 플라톤 북파일 (목)</label><br>
+  <input type="checkbox" name="diary" value="done6">
+  <label for="diary"> 일기 (월/수/금/토/일)</label><br>
+<input type="submit" value="Submit">
+</form>
+ <br><br><br
 
-  참 멋지죠?<br>
+  저는 코딩을 배우는 김기백입니다.<br>
+  <ol>
+    <li><a href="시간표.html"title="나는 슈퍼똘똘이"> 시간표 </a></li>
+  </ol>
 
-  <input type="checkbox">
-  <input type="checkbox">
-  <input type="checkbox">
+  <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://test-nou1fn5ur5.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 </body>
 </html>
